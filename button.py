@@ -11,7 +11,7 @@ print("push 3 times")
 click_cnt = 0
 while click_cnt < 3:
     inputValue = GPIO.input(BUTTON_PIN)
-    if(inputValue == False):
+    if(inputValue == True):
         click_cnt = click_cnt + 1
         print(click_cnt)
     sleep(1)
